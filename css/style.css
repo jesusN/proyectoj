@@ -1,0 +1,129 @@
+body{
+	background-image: url("/ejemplo/img/madera3.jpg");
+	background-repeat: no-repeat;/*esto evita  que la imagen se repita en mosaico*/
+	background-attachment: fixed; /*esto es importante para que la imgen quede estatica en la pagina web*/
+	background-size: 100%; /*esto es para que la imagen este en la pantalla completa */
+	/*esto anterior, todos son importantes para que la imgagen de fondo no e mueva por mas zoom que le demos */
+}
+#continer{
+	background: rgba(255,255,255,0.5);/*este es el color con opacidad del continer*/
+	border-radius: 10px; /*esto le da un borde de 10px a todas las esquinas del continer*/
+	padding: 2%;   /*esto le da un acolchado interno de 2%*/
+	width: 75%; /*esto le da un ancho de 75%*/
+	margin:auto; /*esto le da un margen automatico y lo coloca centrado en la pagina*/
+
+}
+#continer, header, nav, section{ /*etiquetas hermanas anidadas para los mismos atributos (con la coma)*/
+
+	border-radius: 10px; /*esto le da un borde redondeado de 10px a todas las etiquetas hermanas*/
+}
+header{
+		background-repeat: no-repeat; 
+		background-size: 100%;
+		background-color: white;	
+		height: 10%;
+}
+header img{
+	float: left; /*aqui estamos mandando a flotar la imganen a la izquierda para que no colicione con otro contenido*/
+	width: 100%;
+	height: 100%;
+}
+nav{
+	background-color: white;
+	margin:10px 0 10px 0;
+}
+nav img{
+	float: left;
+	height: 10%;
+	width: 10%;
+	margin:auto	;
+}
+#menu, ul li{
+	list-style-type: none; /*esto le quita los asteriscos */
+	display: inline;  /*esto hace que la lista se coloque en horizontal*/
+	text-align: center;				/*este coloca el texto centrado*/
+	margin:5px 10px  5px 10px;		/*esto le da un margen superior, inferior y laterales*/
+}
+#menu  a{
+		text-decoration: none;			/*esto le quita el subrayado a el link */
+}
+
+:hover {
+	background-color: grey;
+	padding: 10px 0 10px 0;
+	border-radius: 10px;
+	background: -webkit-linear-gradient(top, rgba(255,255,0,0.4), rgba(0,0,255,0.4), rgba(255,0,0,0.4));
+	/*con el linear gradient se le da un color degradado de tres colores con una opacidad de 0.4*/
+}
+:active{
+	background: lightblue;
+}
+section,footer{
+	background-color: white;									
+	text-align: center;				
+}
+section img{
+	
+	width: 100%;
+	/*esto anterior, todos son importantes para que la imgagen de fondo no e mueva por mas zoom que le demos */
+}
+
+label .boton{
+	width: 120px;
+	float: left;
+	
+
+}
+fieldset{
+	width: 55%;
+	margin:auto;
+}
+
+/*--
+.boton{
+	border-radius: 10px;
+	padding: 2px;
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0.4), rgba(0,0,0,0.5));
+	margin: auto;
+	width: 40%;		
+}
+.boton1{
+	border-radius: 10px;
+	padding: 2px;
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0.4), rgba(0,0,0,0.5));
+	margin: auto;
+	width: 20%;	
+	height: 10%;
+}
+.boton1 label{
+
+	width: 0px;
+}
+--*/	
+input{
+	border-radius: 10px;
+	padding: 5px;
+}
+
+#seccion{
+	background: white;
+	margin: 20px 0 10px 0;
+	
+}
+#seccion img{
+	width: 20%;
+	height: 20%;
+	float: left;
+}
+
+
+
+footer{
+	background-color: black;
+	height: 20%;
+	border-radius: 0 0 10px 10px;
+	color: white;
+	clear: left;
+	margin-top: 10px;
+	padding: 20px;
+}
